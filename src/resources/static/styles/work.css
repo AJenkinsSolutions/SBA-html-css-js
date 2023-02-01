@@ -1,0 +1,150 @@
+.main-container{
+    width: 65%;
+    height: calc(100vh - 60px);
+   
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-container-menu{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.flex-item{
+    background-color: pink;
+    flex-direction: column;
+    width: 400px;
+    height: fit-content;
+    /* //Pushes completely next to each other */
+     float: left;
+
+    border: 2px solid black;
+    margin: 5px 0;
+    padding: 20px 20px 20px 20px ;
+
+    color: white;
+    font-size: larger;
+    font-family: "Roboto" , sans-serif;
+    line-height: 60px;
+
+} 
+
+.button{
+    height: fit-content;
+    width: fit-content;
+    background-color: blueviolet;
+}
+
+
+
+
+
+.timer-main{
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 25px;
+    border-radius: 2%;
+
+}
+
+
+#countdown{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 5rem;
+
+    width: fit-content;
+    height: fit-content;
+    padding: 2px 2px;
+    color: var(--site-color-04);
+   
+} 
+
+
+.carousel {
+    /* //bottom */
+    position: relative;
+}
+
+.carousel__item{
+    height: 200px;
+    background: #dddd;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #ffff;
+    display: none;
+}
+
+#item1{
+    background-image: url("../images/chill_bro.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
+#item2{
+    background-image: url("../images/coding.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
+#item3{
+    background-image: url("../images/thumbs-up.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.carousel__item--selected{
+    display: block;
+
+}
+.carousel__nav{
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.carousel__button{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: rgb(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel__button--selected{
+    background: rgb(255, 255, 255, 0.5);
+}

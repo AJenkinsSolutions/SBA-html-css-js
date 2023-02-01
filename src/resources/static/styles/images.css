@@ -1,0 +1,30 @@
+
+:root{
+    --cloud-Width: 200px;
+    --cloud-Height: 200px;
+    
+
+}
+
+
+/* Animations */
+@keyframes float {
+    0% {
+        transform: translate(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
+
+.cloud{
+    width: var(--cloud-Width);
+    height: var(var(--cloud-Height));
+    animation: float 4s ease-in-out infinite;
+    z-index: -5;
+}

@@ -1,0 +1,81 @@
+:root{
+     /* Global styling for css file / DONT REPAEAT YOUR SELF */
+     --whiteBackground: #fff;
+
+     /* Darkmode */
+     --blackBackground: #1e1e1e;
+     /* LightMode */
+    --skyblueBackground: #87CEEB;
+    --skyblueBackground2: #43798e;
+
+     --site-color-01: #c13584;
+     --site-color-02: #95165e;
+
+     
+     /* login Color pallette */
+   --color-primary: #009579;
+   --color-primary-dark: #0e7965;
+    --color-secondary: #252c6a;
+    
+    --color-error: #bd1313;
+    --color-sucess: #1ccb0c;
+   
+
+}
+
+body{
+    height: 100vh;
+    background-color: var(--skyblueBackground);
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+   
+}
+
+body::after{
+    /* preload image files */
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../static/images/cloud1.png) url(../static/images/chill_bro.png) url(../images/coding.png) url(../images/facebook.png) url(../images/instagram.png);
+    display: none;
+
+}
+
+/* :default Styling  */
+h1{
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--blackBackground);
+    font-family: "Roboto" , sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--blackBackground);
+    font-family: "Roboto" , sans-serif;
+}
+
+a{
+    /* accounts for css rest */
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--blackBackground);
+    font-family: "Roboto" , sans-serif;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: var(--skyblueBackground2);
+    
+}

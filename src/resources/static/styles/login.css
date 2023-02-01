@@ -1,0 +1,165 @@
+:root{
+    --login-box--MAX_wIDTH: 400px;
+    --border-radius: 4px;
+}
+
+.login-box{
+    /* layout */
+    width: 400px;
+    max-width: var(--login-box--MAX_wIDTH);
+    margin: 1rem;
+    padding: 2rem;
+    /* border */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) ;
+    border-radius: var(--border-radius);
+
+    /* colors */
+    background-color: #ffff;
+
+    /* display */
+    display: flex;
+    flex-direction: column;
+
+}
+/* special stlyes */
+
+
+/* box,field,button */
+.login-box,
+.form__input,
+.form__button{
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* title */
+.form > :first-child{
+    margin-top: 0;
+}
+
+.form > :last-child{
+    margin-bottom: 0;
+}
+
+.form__title{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.form__message{
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.form__message--error{
+    color: var(--color-error);
+}
+
+.form__message--success{
+    color: var(--color-success);
+
+}
+
+.form__input-group{
+    margin-bottom: 1rem;
+}
+
+
+
+.form__input{
+    /* display */
+    display: block;
+    /* layout */
+    width: 100%;
+    padding: 0.75rem;
+    /* border */
+    box-sizing: border-box;
+    border: var(--border-radius);
+    border: 1px solid #dddd;
+
+    background: #ddd;
+    transition: background 0.2s, border-color 0.2;
+
+    
+}
+
+.form__input:focus{
+    border-color: var(--color-primary);
+    background: #ffff;
+}
+
+.form__input--error{
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.form__input-error-message{
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.form__button{
+    /* layout */
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-bottom: 10px;
+
+    /* Text */
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+
+    /* Colors */
+    color: #ffff;
+    background: var(--color-primary);
+    /* Border */
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+
+    cursor: pointer;
+}
+.form__button:hover{
+    background: var(--color-primary-dark);
+}
+
+/* clicking on button sudo animation */
+.form__button:active{
+    transform: scale(0.98);
+}
+
+.form__text{
+    /* Layout */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    /* Special */
+    cursor: pointer;
+}
+
+.form__link{
+    /* colors */
+    color: var(--color-secondary);
+
+    /* Text */
+    text-decoration: underline;
+
+    /* speical */
+    cursor: pointer;
+}
+
+.form__link:hover{
+    text-decoration: underline;
+}
+
+
+.-hidden{
+    display: none;
+}
+
+

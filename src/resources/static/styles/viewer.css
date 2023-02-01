@@ -1,0 +1,8 @@
+.carousel {
+    /* //bottom */
+    position: relative;
+}
+
+.carousel__item{
+    height: 200px;
+}
